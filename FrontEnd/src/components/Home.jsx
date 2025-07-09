@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Home = () => {
+  
   useGetAllJobs();
   const navigate = useNavigate();
   const { user } = useSelector((store) => store.auth);

@@ -7,6 +7,8 @@ import useGetAllJobs from '../hook/useGetAllJobs';
 
 
 const Browse = () => {
+
+    // Custom hook to fetch all jobs
     useGetAllJobs();
     const { allJobs } = useSelector(store => store.job);
     const dispatch = useDispatch();
