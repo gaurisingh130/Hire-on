@@ -17,8 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
   origin: [
-    "http://localhost:5173",
-    "https://hire-on-kv.vercel.app" // ✅ must include https://
+    "http://localhost:5173"
+    // "https://hire-on-kv.vercel.app" // ✅ must include https://
   ],
   credentials: true
 };
