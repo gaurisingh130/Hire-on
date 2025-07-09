@@ -13,8 +13,10 @@ const useGetAllJobs = () => {
         const getAllJobs = async () => {
             try {
                 const res = await axios.get(`${backendURL}/api/v1/job/get?keyword=${searchedQuery}`, { withCredentials: true })
+                 console.log("kv");
                 if (res.data.success) {
                     console.log("kv")
+                    console.log(res.data.jobs)
                     dispatch(setAllJobs(res.data.jobs))
                 }
             } catch (error) {

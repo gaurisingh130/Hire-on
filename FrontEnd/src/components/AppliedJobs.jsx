@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {
   Table,
   TableBody,
@@ -10,11 +10,11 @@ import {
 } from './ui/table';
 import { Badge } from './ui/badge';
 import { useSelector } from 'react-redux';
-import { use } from 'react';
+
 
 const AppliedJobs = () => {
   const { allAppliedJobs } = useSelector((store) => store.job);
-    useState()
+   
   return (
     <div className="overflow-x-auto">
       <Table>
